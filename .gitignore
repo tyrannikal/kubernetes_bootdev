@@ -1,0 +1,41 @@
+# Kubernetes secrets and sensitive files
+*.secret
+*.key
+*.pem
+*.crt
+kubeconfig
+kubeconfig.*
+!kubeconfig.example
+
+# Helm
+charts/*.tgz
+charts/*/charts/
+
+# Kustomize
+kustomize
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Terraform (if used with K8s)
+.terraform/
+*.tfstate
+*.tfstate.*
+terraform.tfvars
+
+# Temporary files
+tmp/
+temp/
